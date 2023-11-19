@@ -1,0 +1,379 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    display: table;
+  width: 100%;
+  background: linear-gradient(rgba(182, 77, 77, 0.5), rgba(180, 162, 88, 0.156));
+  background-position: center top;
+  height: 350px;
+}
+
+.card-body{
+  background-color: rgba(226, 236, 165, 0.632);
+  text-align: center;
+}
+
+.navegacion{
+  height: 17vh;
+  width: 100%;
+  background-color: rgba(169, 169, 169, 0.849);
+  background-position: center;
+  border-radius: 15px;
+}
+
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 20px;
+
+}
+
+nav ul li a{
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+  color: rgb(225, 245, 220);
+  transition: .3s;
+}
+
+.tituloprincipal{
+  background-color: #37a0297a;
+  text-align: center;
+  height: 55px;
+  border-radius: 5px;
+}
+
+.h5carrusel{
+  color: rgb(253, 246, 246);
+  background-color: rgba(0, 0, 0, 0.386);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.pcarrusel{
+  color: rgb(253, 246, 246);
+  background-color: rgba(0, 0, 0, 0.386);
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.h4reseña{
+  padding: 10px;
+  text-align: center;
+  background-color: #37a0297a;
+  border-radius: 7px;
+}
+
+.preseña{
+  padding: 15px;
+  background-color: rgba(255, 127, 80, 0.37);
+  border-radius: 20px;
+}
+
+.h4calendario{
+  padding: 10px;
+  text-align: center;
+  background-color: #37a0297a;
+  border-radius: 7px;
+}
+
+.img-fluid{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: auto;
+}
+
+.h4campus{
+    padding: 10px;
+    text-align: center;
+    background-color: #37a0297a;
+    border-radius: 7px;
+}
+
+.pcampus{
+  padding: 15px;
+  background-color: rgba(255, 127, 80, 0.37);
+  border-radius: 20px;
+  text-align: center;
+}
+
+.h4biblioteca{
+  padding: 10px;
+  text-align: center;
+  background-color: #37a0297a;
+  border-radius: 7px;
+}
+
+.pbiblioteca{
+padding: 15px;
+background-color: rgba(255, 127, 80, 0.37);
+border-radius: 20px;
+text-align: center;
+}
+
+
+.row-g-3{
+text-align: center;
+padding: 15px;
+padding-top: 10px;
+padding-inline: 65px;
+}
+
+.col-md-6{
+  text-align: center;
+padding-top: 15px;
+}
+
+.col-12{
+  text-align: center;
+padding-top: 15px;
+}
+.input-group{
+padding-top: 20px;
+}
+
+.materias{
+  padding-top: 20px;
+}
+
+.form-check{
+padding-top: 20px;
+}
+
+.form-select{
+  padding: 60px;
+}
+
+.col-md-4{
+  padding-top: 15px;
+
+}
+
+#contenedor-libros{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.libros{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  width: 200px;  
+  height: 620px;;
+}
+
+
+footer {
+  text-align: center;
+  padding: 1px;
+  background-color: rgba(255, 127, 80, 0.37);
+  color: rgb(38, 43, 119);
+  display: block;
+  border-radius: 10px;
+}
+
+footer .redes{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 0px;
+  flex-wrap: wrap;
+}
+
+footer .redes a{
+  display: block;
+  width: 60px;
+  height: 60px;
+  background: #000;
+  color: #fff;
+  margin: 15px;
+  text-align: center;
+  border-radius: 100px;
+  transition: .3s ease all;
+
+}
+
+footer .redes .twitter {background: #1d9bf0;}
+footer .redes .facebook {background: #3b5998;}
+footer .redes .instagram {background: #c13584;}
+
+footer .redes a i {
+  font-size: 25px;
+  line-height: 60px;
+}
+
+footer .contenedor-icono:hover a {
+	animation: icono .5s ease;
+}
+
+@keyframes icono {
+	from {
+		transform: rotate3d(0,0,0,0);
+	}
+	to {
+		transform: rotate3d(0,1,0, 360deg);
+	}
+}
+
+footer .creado {
+  margin-bottom: 40px;
+  text-align: center;
+  color: #22151c;
+  font-size: 30px;
+}
+
+footer .creado a {color:#343678f5;}
+footer .creado a:hover {text-decoration: underline;}
+
+.contenedor-libros{
+  display: grid;
+  grid-template-columns: repeat(4.1fr);
+  gap: 2rem;
+
+}
+
+
+.libros-imagen{
+width: 150px;
+height: 200px;
+  max-width: 100%;
+  border-radius: 4px;
+}
+.libros-detalles{
+ color: #1e5275;
+ background-color:#3f343451;
+ border-radius: 0.2rem;
+ padding: 0.5rem;
+ margin-top: -2rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+}
+.libro-titulo{
+  font-size: 20px;
+  padding-top: 30px;
+  text-align: center;
+}
+.libro-agregar{
+  border: 0;
+  background-color: #1d9cf07a;
+  color: #fff;
+  padding: .4rem;
+  text-transform: uppercase;
+  border-radius: 2rem;
+  cursor: pointer;
+  border: 2px solid #1d9cf07a;
+  transition: background-color .2s, color .2s;
+
+}
+.libro-agregar:hover{
+background-color: #fff;
+color: #1d9cf07a;
+}
+
+
+@media screen and (max-width: 850px) {
+  .contenedor-libros {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  .contenedor-libros {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+@media screen and (max-width: 400px) {
+  .contenedor-libros {
+      grid-template-columns: 1fr;
+  }
+}
+
+.btn-toggle {
+  padding: .25rem .5rem;
+  font-weight: 600;
+  color: rgba(0, 0, 0, .65);
+  background-color: transparent;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.btn-toggle::before {
+  width: 1.25em;
+  line-height: 0;
+  content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+  transition: transform .35s ease;
+  transform-origin: .5em 50%;
+}
+
+.btn-toggle[aria-expanded="true"] {
+  color: rgba(0, 0, 0, .85);
+}
+
+.btn-toggle[aria-expanded="true"]::before {
+  transform: rotate(90deg);
+}
+
+.btn-toggle-nav a {
+  padding: .1875rem .5rem;
+  margin-top: .125rem;
+  margin-left: 1.25rem;
+}
+
+.btn-toggle-nav a:hover,
+.btn-toggle-nav a:focus {
+  background-color: #d2f4ea;
+}
+
+.scrollarea {
+  overflow-y: auto;
+}
+
+.button_categoria{
+  background-color: #1d9bf0;
+  font-size: 20px;
+  padding: 6px;
+border-radius: 8px;
+padding-inline: 35px;
+padding-block: 13px;
+width: 190px;
+}
+
+.button_categoria:hover{
+  color: rgba(0, 0, 0, .85);
+  background-color: #d2f4ea;
+}
+
+.volver{
+text-decoration: none;
+color: #060e14;
+}
